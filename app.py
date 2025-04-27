@@ -6,7 +6,7 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 
 
 # Model and Agent tools
-llm = ChatGroq(api_key=st.secrets.get("GROQ_API_KEY"))
+llm = ChatGroq(api_key=st.secrets["GROQ_API_KEY"], model_name="compound-beta")
 search = TavilySearchResults(max_results=2)
 parser = StrOutputParser()
 # tools = [search] # add tools to the list
