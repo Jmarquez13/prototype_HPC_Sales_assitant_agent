@@ -1,6 +1,5 @@
 import streamlit as st
 from langchain_groq import ChatGroq
-<<<<<<< HEAD
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_community.tools.tavily_search import TavilySearchResults
@@ -183,4 +182,4 @@ if submit and product_name and company_url:
 
 elif submit:
     st.warning("⚠️ Please enter both a product name and company URL.")
->>>>>>> b4af790e (Updated with new agent and model)
+# ========== End of Code ==========
