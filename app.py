@@ -102,7 +102,7 @@ with st.form("company_info", clear_on_submit=True):
             )
 
 st.markdown(company_insights)
-=======
+
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_community.tools.tavily_search import TavilySearchResults
