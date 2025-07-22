@@ -4,6 +4,10 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_community.tools.tavily_search import TavilySearchResults
 
+#==== Streamlit Configuration ===
+groq_api_key = st.secrets["GROQ_API_KEY"]
+tavily_api_key = st.secrets["TAVILY_API_KEY"]
+
 # ==== Model Setup ====
 llm = ChatGroq(api_key=st.secrets.get("GROQ_API_KEY"), model_name="llama3-70b-8192")
 search = TavilySearchResults(max_results=2)
