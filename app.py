@@ -2,7 +2,8 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_tavily import TavilySearchResults
+from langchain_community.tools.tavily_search import TavilySearchResults
+
 
 #==== Streamlit Configuration ===
 groq_api_key = st.secrets["GROQ_API_KEY"]
